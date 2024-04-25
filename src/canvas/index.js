@@ -6,17 +6,16 @@ import Backdrop from './Backdrop'
 
 function CanvasModel() {
   return (
-    <Canvas>
+    <Canvas  style={{ width: '100%', height: '90vh'}}>
         <ambientLight intensity={0.5} />
         <Environment preset='city' />
 
-        {/* <Camera> */}
-            {/* <Backdrop> */}
+        <Camera>
+            {/* <Backdrop /> */}
                 <Center>
-                    <Shirt />
+                    <Shirt/>
                 </Center>
-            {/* </Backdrop> */}
-        {/* </Camera> */}
+        </Camera>
     </Canvas>
 )
 }
